@@ -142,3 +142,47 @@ footer {
   color: #7A6E62;
   letter-spacing: 0.02em;
 }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin: 1.75rem 0 2.5rem;
+}
+ 
+.card {
+  background-color: #FBF4E8;
+  border: 1px solid #d4c4b0;
+  border-top: 3px solid #9E6455;
+  border-radius: 3px;
+  padding: 1.5rem 1.5rem 1.4rem;
+}
+ 
+.card-icon {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: #9E6455;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+ 
+/* .card h3 is more specific than the global h3, so these win */
+.card h3 {
+  margin: 0.9rem 0 0.4rem;
+  font-size: 1.4rem;
+  line-height: 1.25;
+}
+ 
+.card p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+ 
+/* Stack on phones */
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
